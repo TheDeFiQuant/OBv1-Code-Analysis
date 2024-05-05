@@ -1,0 +1,70 @@
+openbook-dex/program
+
+      67 text files.
+      58 unique files.                              
+      10 files ignored.
+
+--------------------------------------------------------------------------------------------------------------------
+File                                                                             blank        comment           code
+--------------------------------------------------------------------------------------------------------------------
+./dex/src/state.rs                                                                 373             61           3086
+./dex/crank/src/lib.rs                                                             110              4           1483
+./dex/src/instruction.rs                                                            79            173           1068
+./dex/src/matching.rs                                                               88              5            943
+./dex/src/critbit.rs                                                               123             23            852
+./dex/fuzz/fuzz_targets/multiple_orders.rs                                          55             10            769
+./dex/src/tests.rs                                                                  78             17            678
+./dex/permissioned/src/middleware.rs                                                66            103            424
+./dex/crank/src/token_instruction.rs                                                41            179            394
+./dex/fuzz/src/lib.rs                                                               34              0            348
+./dex/tests/permissioned/tests/permissioned-markets.js                              35             19            295
+./common/src/client/rpc.rs                                                          35              0            228
+./dex/tests/permissioned/tests/utils/market-lister.js                                9              3            173
+./dex/src/error.rs                                                                  31              2            167
+./dex/permissioned/src/proxy.rs                                                     17             22            159
+./dex/tests/permissioned/programs/permissioned-markets/src/lib.rs                   33             92            157
+./dex/src/fees.rs                                                                   26              0            138
+./.github/workflows/ci-test.yml                                                     15              2            105
+./dex/tests/permissioned/tests/utils/market-proxy.js                                 4              6             93
+./dex/tests/permissioned/tests/utils/market-maker.js                                 5              3             92
+./common/src/client/mod.rs                                                          11              0             88
+./dex/tests/permissioned/tests/utils/faucet.js                                      12              5             80
+./common/src/program.rs                                                              3              0             78
+./dex/README.md                                                                     23              0             66
+./dex/tests/permissioned/tests/utils/index.js                                        9             25             64
+./.github/workflows/ci-verifiable-build.yml                                         11              7             63
+./dex/Cargo.toml                                                                     7              0             53
+./SECURITY.md                                                                       23              0             49
+./README.md                                                                         22              0             47
+./dex/src/lib.rs                                                                     7              2             43
+./.travis.yml                                                                        2              0             36
+./dex/tests/permissioned/package.json                                                0              0             36
+./.github/workflows/ci-js-lint.yml                                                   6              0             35
+./common/src/path.rs                                                                 4              0             32
+./dex/crank/Cargo.toml                                                               2              0             26
+./dex/fuzz/Cargo.toml                                                                4              0             26
+./common/Cargo.toml                                                                  4              2             25
+./scripts/travis/dex-tests.sh                                                        4             24             22
+./dex/tests/permissioned/programs/permissioned-markets/Cargo.toml                    3              0             19
+./assert-owner/src/lib.rs                                                            1              0             17
+./dex/tests/permissioned/tests/utils/common.js                                       4              1             16
+./dex/proptest-regressions/instruction.txt                                           0              0             15
+./dex/proptest-regressions/fees.txt                                                  0              0             13
+./assert-owner/Cargo.toml                                                            4              1             11
+./ignored_files.txt                                                                  0              0             11
+./Cargo.toml                                                                         0              0             10
+./dex/Anchor.toml                                                                    3              0             10
+./dex/tests/permissioned/Anchor.toml                                                 3              0             10
+./CHANGELOG.md                                                                       1              0              9
+./dex/permissioned/Cargo.toml                                                        1              0              9
+./dex/crank/src/bin/main.rs                                                          1              0              7
+./common/src/lib.rs                                                                  1              0              6
+./dex/tests/permissioned/.prettierrc.json                                            0              0              6
+./dex/permissioned/src/lib.rs                                                        1              0              5
+./dex/tests/permissioned/Cargo.toml                                                  0              0              4
+./dex/tests/permissioned/programs/permissioned-markets/Xargo.toml                    0              0              2
+./assert-owner/README.md                                                             0              0              1
+./assert-owner/program-id.md                                                         0              0              1
+--------------------------------------------------------------------------------------------------------------------
+SUM:                                                                              1434            791          12703
+--------------------------------------------------------------------------------------------------------------------
