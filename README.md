@@ -3,8 +3,7 @@
 ## Overview
 This repository contains a code analysis of the OpenBook v1. Here, we delve into the structure, functionality, and design patterns of OpenBook.
 
-## File Structure
-Below is a list of key files and their descriptions in this repository:
+## Contents
 
 - `code/`
   - `state_rs.txt` – Defines and manages the core market data structures and functionalities.
