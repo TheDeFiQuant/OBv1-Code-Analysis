@@ -9,5 +9,5 @@ Below is a list of key files and their descriptions in this repository:
 - `code/`
   - `state_rs.txt`: ...
 - `Code_metadata.txt`: Total lines of code, number of files and programming languages used to build OBv1.
-- `Directory.txt`: Information about the directory structure of the OpenBook.
+- `Directory.txt`: Directory structure of the OpenBook v1.
 - `File_metadata.txt`: Code files sorted by size (lines of code).
