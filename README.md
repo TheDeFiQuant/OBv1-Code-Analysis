@@ -66,4 +66,4 @@ OpenBook, formerly known as Serum DEX, is a decentralized exchange built on the 
 
 ### Conclusion
 
-OpenBook DEX leverages the high throughput and low latency of the Solana blockchain to provide a fast and secure trading experience. Its robust state management, efficient matching engine, and extensive testing ensure that it can handle the demands of a decentralized exchange while maintaining security and reliability.
+OpenBook DEX leverages the high throughput and low latency of Solana to provide a fast and secure trading experience. Its robust state management, efficient matching engine, and extensive testing ensure that it can handle the demands of a decentralized exchange while maintaining security and reliability.
