@@ -1,6 +1,6 @@
 ### Summary of OpenBook DEX
 
-OpenBook, formerly known as Serum DEX, is a decentralized exchange built on the Solana blockchain. It allows for fast, low-cost, and secure trading of digital assets. Below is a comprehensive summary of how OpenBook works, based on the various components and code files examined.
+OpenBook, formerly known as Serum DEX, is a decentralized exchange built on Solana. It allows for fast, low-cost, and secure trading of digital assets. Below is a comprehensive summary of how OpenBook works, based on the various components and code files examined.
 
 ### Key Components
 
