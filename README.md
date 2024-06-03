@@ -1,6 +1,6 @@
 ### Openbook v1
 
-Openbook is a decentralized and order book-based exchange built on Solana. It's a community fork of Serum, the first order book-based DEX on Solana. Serum was released in August 2020 and initially developed by former FTX and Alameda employees. In the aftermath of the FTX collapse and subsequent hack, Solana's DeFi community feared that the private keys and upgrade authority of Serum were compromised and decided to fork it. At the time of the fork, Serum was in version 4. The following code analysis looks at the core components and workflow of Openbook v1.
+Openbook is a decentralized and order book-based exchange built on Solana. It's a community fork of Serum, the first order book-based DEX on Solana. Serum was released in August 2020 and initially developed by former FTX and Alameda employees. Due to concerns over compromised private keys and upgrade authority following the FTX collapse and hack, Solana's DeFi community decided to fork Serum. At the time of the fork, Serum was in version 4. The following code analysis looks at the core components and workflow of Openbook v1.
 
 ### Key Components
 
