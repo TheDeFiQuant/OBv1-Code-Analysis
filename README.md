@@ -1,6 +1,6 @@
-### Summary of OpenBook DEX
+### Openbook v1
 
-OpenBook, formerly known as Serum DEX, is a decentralized exchange built on Solana. It allows for fast, low-cost, and secure trading of digital assets. Below is a comprehensive summary of how OpenBook works, based on the various components and code files examined.
+Openbook is a decentralized and order book-based exchange built on Solana. It's a community fork of Serum, the first order book-based DEX on Solana. Serum was released in August 2020 and initially developed by former FTX and Alameda employees. In the aftermath of the FTX collapse and subsequent hack, Solana's DeFi community feared that the private keys and upgrade authority of Serum were compromised and decided to fork it. At the time of the fork, Serum was in version 4. The following code analysis looks at the core components and workflow of Openbook v1.
 
 ### Key Components
 
@@ -54,16 +54,3 @@ OpenBook, formerly known as Serum DEX, is a decentralized exchange built on Sola
 **Cancelling and Pruning Orders**
    - Users can cancel their orders using the `CancelOrderInstructionV2` or `CancelOrderByClientIdV2`.
    - Pruning removes inactive or invalid orders from the order book to maintain efficiency.
-
-### Security and Robustness
-
-- **Error Handling**:
-  - The DEX handles various error conditions gracefully, ensuring that operations are either fully completed or reverted without leaving the market in an inconsistent state.
-- **Fuzz Testing**:
-  - Fuzz testing ensures that the DEX can handle a wide range of inputs and conditions, identifying potential vulnerabilities and edge cases.
-- **Permissions and Authorities**:
-  - The DEX supports permissioned markets where certain actions require authorization, adding an extra layer of security.
-
-### Conclusion
-
-OpenBook DEX leverages the high throughput and low latency of Solana to provide a fast and secure trading experience. Its robust state management, efficient matching engine, and extensive testing ensure that it can handle the demands of a decentralized exchange while maintaining security and reliability.
