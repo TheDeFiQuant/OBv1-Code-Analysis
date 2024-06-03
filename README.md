@@ -25,10 +25,6 @@ Openbook is a decentralized and order book-based exchange built on Solana. It's 
    - The crank program is an off-chain component that listens for new on-chain events (like new orders) and processes them.
    - It performs actions such as filling orders and consuming events from the queue.
 
-**Fuzz Testing**
-   - Extensive fuzz testing is used to simulate various scenarios and edge cases to ensure the robustness and security of the exchange.
-   - The fuzz tests perform actions like placing orders, canceling orders, consuming events, and verifying the state of the market.
-
 ### Workflow
 
 **Initialization**
