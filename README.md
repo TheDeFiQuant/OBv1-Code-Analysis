@@ -1,6 +1,6 @@
 # Openbook v1
 
-Openbook is a decentralized and order book-based exchange built on Solana. It's a community fork of Serum, the first order book-based DEX on Solana. Serum was released in August 2020 and initially developed by former FTX and Alameda employees. Due to concerns over compromised private keys and upgrade authority following the FTX collapse and hack, Solana's DeFi community decided to fork Serum. At the time of the fork, Serum was in version 4. The following code analysis looks at the core components and workflow of Openbook v1.
+OpenBook is a decentralized, order book-based exchange built on Solana. It is a community fork of Serum, the first order book-based DEX on Solana, which was initially developed by former FTX and Alameda employees and released in August 2020. Due to concerns over compromised private keys and upgrade authority following the FTX collapse and hack, Solana's DeFi community decided to fork Serum. At the time of the fork, Serum was in version 4. OpenBook v1 represents a significant improvement over Serum v4 and is technically seen v5. The following code analysis examines the architecture, core components, and workflow of OpenBook v1.
 
 ## Architecture
 
@@ -59,21 +59,8 @@ OpenBook's architecture includes modules for market and instruction management, 
 
 ## Workflow
 
-### Overview
-
-1. **Initialization**: Markets are initialized with their respective trading pairs, vaults, and order books.
-2. **Placing Orders**: Users place orders using the new order instruction, which are then added to the order book.
-3. **Matching Orders**: The matching engine processes new orders and matches them against existing orders in the order book.
-4. **Cranking**: The crank program processes the event queue, settles trades, and updates account balances.
-5. **Settling Funds**: Funds are moved from the vaults to users' accounts upon trade settlement.
-6. **Canceling Orders**: Users can cancel their open orders, which removes them from the order book and releases reserved funds.
-7. **Permissioned Operations**: Middleware and proxy accounts manage access control for permissioned markets.
-
-
-### Process
-
 **Initialization**
-   - Market accounts are initialized with parameters like base and quote asset mints, lot sizes, and initial balances.
+   - Market accounts are initialized with parameters like base and quote asset mints, lot sizes, initial balances and their respective trading pairs, vaults, and order books.
    - Open orders accounts are created for users to manage their orders.
 
 **Placing Orders**
@@ -85,13 +72,13 @@ OpenBook's architecture includes modules for market and instruction management, 
    - Matched orders are executed, and the respective balances are updated.
 
 **Consuming Events**
-   - The crank program processes events from the event queue, such as order fills and cancellations.
+   - The crank program processes events from the event queue, such as order fills and cancellations, settles trades, and updates account balances.
    - It ensures that the state of the market is updated in real-time.
 
 **Settling Funds**
    - After orders are matched and trades are executed, funds are settled using the `SettleFunds` instruction.
-   - This ensures that users receive their traded assets and any fees are collected.
+   - This ensures that users receive their traded assets and that fees are collected.
 
 **Cancelling and Pruning Orders**
-   - Users can cancel their orders using the `CancelOrderInstructionV2` or `CancelOrderByClientIdV2`.
+   - Users can cancel their orders using the `CancelOrderInstructionV2` or `CancelOrderByClientIdV2` which removes them from the order book and releases reserved funds.
    - Pruning removes inactive or invalid orders from the order book to maintain efficiency.
